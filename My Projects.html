@@ -4,44 +4,117 @@
     <meta charset="UTF-8">
     <title>Portfolio Projects</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url("images/Screenshot 2024-01-29 170813.png");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
 
-    <div class="container">
-        <div class="project">
-            <img src="path_to_your_project_image_1.jpg" alt="Project 1">
-            <p>Description of Project 1...</p>
+    <body>
+
+        <div class="navbar">
+            <button onclick="navigateTo('AboutMe')"><i class="fa fa-user"></i>About Me</button>
+            <button onclick="navigateTo('MyProjects')"><i class="fa fa-folder-open"></i>My Projects</button>
+            <button onclick="navigateTo('index')"><i class="fa fa-house"></i>home</button>
+            <button onclick="navigateTo('extra')"><i class="fa fa-chart-line"></i>Extra</button>
+            <button onclick="navigateTo('extra')"><i class="fa fa-chart-bar"></i>Extra</button>
+            <button onclick="navigateTo('extra')"><i class="fa fa-database"></i>Extra</button>
+          </div>
+    
+    
+        <div id="content">
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+
+<h2 class="text-center mt-5">My Projects</h2>
+<section id="textbox1">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod...</h1>
+</section>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 project-container">
+            <div class="project-content" onclick="window.open('https://drewfethke1.github.io/VR-Website/', '_blank')">
+                <p>My VR website using a combination of HTML, CSS and JavaScript</p>
+            </div>
+        </div>
+        <div class="col-md-6 project-container">
+        <a href="https://drewfethke1.github.io/VR-Website/" target="_blank">
+            <img src="images\Screenshot 2024-02-11 122438.png" class="img-fluid" alt="Project 1">
+        </a>
+         </div>
+
+
+          <!-- Project 2 -->
+          <div class="col-md-6 project-container" onclick="window.open('https://mod.io/g/bonelab/m/rougelike-dungeon-for-bonelab', '_blank')" style="cursor: pointer;">
+            <p style="color: inherit; text-decoration: none;">My Rougelike dungeon Bonelab Mod</p>
+        </div>
+        
+        <div class="col-md-6 project-container" onclick="showNextImage()">
+            <img src="images/Screenshot 2023-11-13 194553.png" class="img-fluid" alt="Project 2">
         </div>
 
-        <div class="project">
-            <img src="path_to_your_project_image_2.jpg" alt="Project 2">
-            <p>Description of Project 2...</p>
-        </div>
-
-        <div class="project">
-            <img src="path_to_your_project_image_3.jpg" alt="Project 3">
+        <!-- Project 3 -->
+        <div class="col-md-6 project-container">
             <p>Description of Project 3...</p>
         </div>
+        <div class="col-md-6 project-container">
+            <img src="path_to_your_project_image_3.jpg" class="img-fluid" alt="Project 3">
+        </div>
 
-        <div class="project">
-            <img src="path_to_your_project_image_4.jpg" alt="Project 4">
+        <!-- Project 4 with GitHub Repository -->
+        <div class="col-md-6 project-container">
+            <img src="path_to_your_project_image_4.jpg" class="img-fluid" alt="Project 4">
             <p>Description of Project 4...</p>
+            <a href="https://github.com/your_github_repository_url" class="btn btn-primary" target="_blank">GitHub Repository</a>
+        </div>
+
+        <!-- Project 5 with Unity File -->
+        <div class="col-md-6 project-container">
+            <img src="path_to_your_project_image_5.jpg" class="img-fluid" alt="Project 5">
+            <p>Description of Project 5...</p>
+            <a href="path_to_your_unity_file" class="btn btn-success" target="_blank">Unity File</a>
         </div>
     </div>
-
-    <footer>
-        <p>Copyright © Your Name</p>
-    </footer>
-</body>
-</dic>
-<h2>My Projects</h2>
-<section id="my-projects">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Odio facilisis mauris sit amet. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Augue eget arcu dictum varius duis at consectetur. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sed blandit libero volutpat sed cras ornare arcu dui. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Sapien pellentesque habitant morbi tristique senectus et netus. Orci a scelerisque purus semper eget. Nunc aliquet bibendum enim facilisis gravida. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Sagittis id consectetur purus ut faucibus pulvinar elementum. Dui faucibus in ornare quam viverra. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nisl suscipit adipiscing bibendum est ultricies integer quis. Justo nec ultrices dui sapien. Luctus accumsan tortor posuere ac. Mauris ultrices eros in cursus turpis massa.
-        Sagittis id consectetur purus ut. Semper eget duis at tellus at urna condimentum mattis. Quis ipsum suspendisse ultrices gravida dictum. Cras semper auctor neque vitae tempus. Libero enim sed faucibus turpis in eu mi. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Mattis pellentesque id nibh tortor. Fringilla ut morbi tincidunt augue interdum velit euismod. Nisl tincidunt eget nullam non nisi. Ornare massa eget egestas purus. Vitae auctor eu augue ut lectus arcu bibendum. Eu feugiat pretium nibh ipsum consequat.
-        Sem et tortor consequat id porta nibh venenatis cras sed. Id faucibus nisl tincidunt eget nullam non.</p>
-</section>
 </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Copyright © Drew Fethke</p>
+</footer>
+
+<script>
+    let currentImageIndex = 0;
+    const images = [
+        "images/Screenshot 2023-11-13 194553.png",
+        "images/Screenshot 2023-11-13 194922.png",
+        "images/Screenshot 2023-11-13 195130.png",
+        "images/Screenshot 2023-11-13 195228.png",
+        "images/Screenshot 2023-11-13 195952.png"
+    ];
+
+    function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        document.querySelectorAll('.project-container img')[1].src = images[currentImageIndex];
+    }
+</script>
+
+</body>
 </html>
