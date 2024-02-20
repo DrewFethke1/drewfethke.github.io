@@ -2,7 +2,7 @@ function navigateTo(page) {
     console.log("Navigating to:", page);
 
     
-    const validPages = ['AboutMe', 'MyProjects', 'index', 'extra', 'extra', 'extra']; 
+    const validPages = ['AboutMe', 'MyProjects', 'index', 'AboutGimm', 'extra', 'extra']; 
     if (!validPages.includes(page)) {
         console.error('Invalid page requested');
         document.getElementById('content').innerHTML = '<p>Invalid page requested.</p>';
@@ -16,8 +16,8 @@ function navigateTo(page) {
         window.location.href = 'My Projects.html';
     } else if (page === 'index') {
         window.location.href = 'index.html';
-    } else if (page === 'TextPage') {
-        window.location.href = 'TextPage.html';
+    } else if (page === 'AboutGimm') {
+        window.location.href = 'About Gimm.html';
     } else if (page === 'SankeyGraph') {
         window.location.href = 'SankeyGraph.html';
     } else if (page === 'index') {

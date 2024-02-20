@@ -20,7 +20,7 @@ hr {
 }
 
 header, footer {
-    background: #333;
+    background: #3333336e;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -38,8 +38,126 @@ img {
     display: block;
     margin: 20px 0;
 }
-h1 {   /*Title class*/
-    background-color: #339df4;   
+h1 {
+  background: linear-gradient(to right, #009dff, #04013c); 
+  border: 1px solid #000; 
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: 'Rubic', Courier, monospace;
+  color: #333;
+  line-height: 1.6;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  animation: textGradient1 5s infinite alternate; 
+}
+
+@keyframes textGradient1{
+  0% {
+      color: #ffffff; 
+  }
+  100% {
+      color: #000000; 
+  }
+}
+
+
+h2 {
+  border: 5px solid #000;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 5px 0;
+  font-family: 'Roboto', 'Verdana', 'Courier', monospace;
+  color: #333;
+  line-height: 1.6;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(to right, #15c8b6, #0e0adb); 
+  animation: textGradient2 5s infinite alternate, backgroundAnimation2 2s infinite linear, shadowAnimation2 3s infinite alternate; /* Animations */
+  transition: transform 1s, box-shadow 0.3s; 
+}
+
+@keyframes textGradient2 {
+  0% {
+      color: #ffffff;
+  }
+  100% {
+      color: #000000;
+  }
+}
+
+@keyframes backgroundAnimation2 {
+  0% {
+      background-position: 0% 50%; 
+  }
+  100% {
+      background-position: 100% 50%; 
+  }
+}
+
+@keyframes shadowAnimation2 {
+  0% {
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  100% {
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); 
+  }
+}
+
+h2:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+h3 {
+  background: linear-gradient(to right, #4a41c6, #65d2d5); 
+  border-radius: 25px;
+  padding: 12px;
+  margin: 5px 0;
+  font-family: 'Roboto', 'Arial', Courier, monospace;
+  color: #000000;
+  line-height: 1.6;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px; 
+  transition: background-color 0.3s, transform 3s, box-shadow 0.3s; 
+  animation: backgroundAnimation3 5s infinite alternate, shadowAnimation3 3s infinite alternate; 
+}
+
+
+@keyframes backgroundAnimation3 {
+  0% {
+      background-color: #8b85e3; 
+  }
+  100% {
+      background-color: #ed70a1; 
+  }
+}
+
+@keyframes shadowAnimation3 {
+  0% {
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  100% {
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); 
+  }
+}
+
+h3:hover {
+  transform: scale(1.02); 
+  background-color: #000000; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+  h4 {
+    background-color: #339df4;
     border: 1px solid rgb(0, 0, 0)000;
     border-radius: 10px;
     padding: 20px;
@@ -49,37 +167,10 @@ h1 {   /*Title class*/
     line-height: 1.6;
     overflow: auto;
     text-align: center;
-    font-weight: bold 1;
-  }
+    font-weight: bold;
+    font-size: 12px; 
+}
 
-  h2 {   /*about me class*/
-    background-color: #4437ef;   
-    border: 5px solid rgb(0, 0, 0)000;
-    border-radius: 10px;
-    padding: 12px;
-    margin: 5px 0;
-    font-family: 'Verdana', Courier, monospace;
-    color: #333;
-    line-height: 1.6;
-    overflow: auto;
-    text-align: center;
-    font-weight: bold 1;
-  }
-
-  h3 {   /*about me class for paragraph*/
-    background-color: #8b85e3;   
-    border: 5px solid rgb(0, 0, 0)000;
-    border-radius: 25px;
-    padding: 12px;
-    margin: 5px 0;
-    font-family: 'Arial', Courier, monospace;
-    color: #333;
-    line-height: 1.6;
-    overflow: auto;
-    text-align: center;
-    font-weight: bold 1;
-    font-size: 4px;
-  }
   
  
   .keyword {
@@ -100,7 +191,7 @@ h1 {   /*Title class*/
     font-style: italic;
   }
   
-  /* Responsive Styles */
+  
   @media screen and (max-width: 600px) {
     .code-box {
       padding: 15px;
@@ -112,7 +203,7 @@ h1 {   /*Title class*/
     width: 800px; 
     height: 1000px;
     overflow: hidden;
-    border-radius: 23%; /* edge radius */
+    border-radius: 23%; 
     margin: 0 auto 10px; 
     box-shadow: 2 2 2px rgba(0, 0, 0, 0.2); 
 }
@@ -167,23 +258,11 @@ h1 {   /*Title class*/
 .navbar button i {
   margin-right: 8px;
 }
-
-.project {
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
-
-.project:hover {
-  transform: scale(1.05);
-}
-
-/* Navbar Styling */
         .navbar {
           display: flex;
           justify-content: center;
           background-color: rgba(0, 0, 0, 0.5); /* Transparent background color */
 }
-
       .navbar button {
           background-color: transparent;
           color: white;
@@ -197,8 +276,18 @@ h1 {   /*Title class*/
       .project-container {
           position: relative;
           overflow: hidden;
+          border-radius: 15px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 2.4s ease;
       }
-
+      .project {
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+      }
+      
+      .project:hover {
+        transform: scale(1.05);
+      }
       .project-container:before {
           content: "";
           position: absolute;
@@ -206,17 +295,254 @@ h1 {   /*Title class*/
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(0, 0, 255, 0.5); /* Transparent blue rectangle */
+          background-color: rgba(0, 0, 255, 0.5); 
           z-index: -1;
+          transition: opacity 0.3s ease; 
       }
+      .project-container:hover:before {
+        opacity: 1; /* Show gradient on hover */
+    }
+    
+    .project-container:hover {
+        transform: scale(1.05); /* Scale up on hover for a subtle zoom effect */
+    }
+    
 
-      .project-content {
-          position: relative;
-          z-index: 1;
-          padding: 20px;
-      }
 
-      .project-content p {
-          font-size: 18px;
-          line-height: 1.6;
+
+       /* Additional CSS for enhanced styling */
+       .about-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .about-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-content {
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .about-content p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .about-content form {
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    .about-content label {
+        font-weight: bold;
+    }
+
+    .about-content input,
+    .about-content textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .about-content input[type="submit"] {
+        background-color: #339df4;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .about-content input[type="submit"]:hover {
+        background-color: #0077cc;
+    }
+
+    h5 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Arial Black', sans-serif; 
+      font-size: 88px; 
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      animation: textAnimation5 3s infinite alternate, gradientAnimation5 5s infinite alternate, shadowAnimation5 3s infinite alternate; /* Animations */
+      cursor: pointer; 
+      transition: color 0.3s, text-decoration 0.3s, box-shadow 0.3s; 
+  }
+  
+  h5:hover {
+      color: #007bff; 
+      text-decoration: underline; 
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  @keyframes textAnimation5 {
+      0% {
+          transform: translate(-50%, -50%) scale(1.4);
       }
+      100% {
+          transform: translate(-50%, -50%) scale(1.8); 
+      }
+  }
+  
+  @keyframes gradientAnimation5 {
+      0% {
+          color: #ffffff; 
+      }
+      100% {
+          color: #000000; 
+      }
+  }
+  
+  @keyframes shadowAnimation5 {
+      0% {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      }
+      100% {
+          text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); 
+      }
+  }
+  
+  h6 {
+    background: linear-gradient(to right, #ffffff, #426eff); 
+    border: 5px solid #000;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 5px 0;
+    font-family: 'Verdana', Courier, monospace;
+    color: #333;
+    line-height: 1.6;
+    overflow: auto;
+    text-align: center;
+    font-weight: bold;
+    animation: textGradient6 5s infinite alternate; 
+    transition: color 0.3s, box-shadow 0.3s, transform 0.3s, border-color 0.3s; 
+}
+
+@keyframes textGradient6 {
+    0% {
+        color: #000dff; 
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+h6:hover {
+    color: #ffffff; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); 
+    border-color: #2e26a2; 
+}
+
+h7 {
+  font-family: 'Verdana', Courier, monospace;
+  color: #333;
+  font-weight: bold;
+  position: relative; 
+  animation: textGradient7 3s infinite alternate; 
+  transition: color 0.3s, box-shadow 0.3s, transform 0.3s, border-color 0.3s; 
+}
+
+h7::before {
+  position: absolute;
+  left: 10px; 
+  transform: translateY(-50%);
+  font-size: 18px; 
+}
+
+@keyframes textGradient7 {
+  0% {
+      color: #ffffff; 
+  }
+  100% {
+      color: #8b8181; 
+  }
+}
+
+h7:hover {
+  color: #ffffff; 
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.1); 
+}
+
+h8 {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  background: linear-gradient(to right, #4CAF50, #2196F3);
+  color: white;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  width: 715px;
+  height: 250px;
+  line-height: 1.6em;
+  text-align: center;
+  overflow: hidden;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+h8::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #4CAF50, #2196F3);
+  border-radius: 5px;
+  z-index: -1;
+  transition: opacity 0.3s;
+}
+
+h8:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h8:hover::before {
+  opacity: 0;
+}
+
+@keyframes rotateText8 {
+  0% {
+      transform: rotate(-.5deg);
+  }
+  50% {
+      transform: rotate(.5deg);
+  }
+  100% {
+      transform: rotate(-.5deg);
+  }
+}
+
+h8:hover {
+  animation: rotateText8 5s infinite alternate;
+}
+
+
+
+
+
