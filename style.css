@@ -497,13 +497,14 @@ h8 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  width: 715px;
+  width: 500px;
   height: 250px;
   line-height: 1.6em;
   text-align: center;
   overflow: hidden;
   transition: box-shadow 0.3s, background-color 0.3s;
 }
+
 
 h8::before {
   content: "";

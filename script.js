@@ -2,7 +2,7 @@ function navigateTo(page) {
     console.log("Navigating to:", page);
 
     
-    const validPages = ['AboutMe', 'MyProjects', 'index', 'AboutGimm', 'extra', 'extra']; 
+    const validPages = ['AboutMe', 'MyProjects', 'index', 'AboutGimm']; 
     if (!validPages.includes(page)) {
         console.error('Invalid page requested');
         document.getElementById('content').innerHTML = '<p>Invalid page requested.</p>';
